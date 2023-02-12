@@ -1,0 +1,28 @@
+--Create an online clothing store database
+
+CREATE TABLE tiendita (id INTEGER PRIMARY KEY, name TEXT,item INTEGER, size INTEGER, color INTEGER, price REAL);
+
+INSERT INTO tiendita VALUES (1, "Tank", "apparel", "SML", "white", 18);
+INSERT INTO tiendita VALUES (2, "Flowy Blouse", "apparel", "SML", "pink", 25);
+INSERT INTO tiendita VALUES (3, "Crop Top", "apparel", "SML", "yellow", 20);
+INSERT INTO tiendita VALUES (4, "Turtle Neck", "apparel", "SML", "orange", 30);
+INSERT INTO tiendita VALUES (5, "Sweater","apparel", "SML", "beige", 40);
+INSERT INTO tiendita VALUES (6, "Puffer Vest","apparel", "SML", "brown", 55);
+INSERT INTO tiendita VALUES (7, "Scarf", "accessory", "one size", "gray", 12);
+INSERT INTO tiendita VALUES (8, "Belt", "accessory", "one size", "black", 44);
+INSERT INTO tiendita VALUES (9, "Socks", "accessory", "one size", "gray", 5);
+INSERT INTO tiendita VALUES (10, "Blazer", "apparel", "SML", "navy", 78);
+INSERT INTO tiendita VALUES (11, "Bikini", "apparel", "SML", "Blue", 35);
+INSERT INTO tiendita VALUES (12, "Summer Hat", "accessory", "one size", "brown", 24);
+INSERT INTO tiendita VALUES (13, "Skinny Jeans", "apparel", "SML", "Light Denim", 85);
+INSERT INTO tiendita VALUES (14, "Mom Jeans", "apparel", "SML", "Dark Denim", 92);
+INSERT INTO tiendita VALUES (15, "Flare Jeans", "apparel", "SML", "Black Denim", 92);
+
+--Display online store database ordered by id
+
+SELECT * FROM tiendita 
+ORDER BY id;
+
+-- Display online store database ordered by price
+
+Select name, price FROM tiendita ORDER BY price asc;
