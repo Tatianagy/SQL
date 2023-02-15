@@ -1,0 +1,68 @@
+--CREATE TABLE abarrotes 
+
+CREATE TABLE abarrotes 
+(id INTEGER PRIMARY KEY, name TEXT, kind TEXT, quantity INTEGER, aisle INTEGER);
+
+-- ADDING DATA
+
+INSERT INTO abarrotes VALUES (1, "Bottle Water", "Drink", 100, 1);
+
+INSERT INTO abarrotes VALUES (2, "Coke", "Drink", 65, 2);
+
+INSERT INTO abarrotes VALUES (3, "Gatorade", "Drink", 48, 2);
+
+INSERT INTO abarrotes VALUES (4, "Iced Tea", "Drink", 40, 1);
+
+INSERT INTO abarrotes VALUES (5, "Lacroix", "Snack", 30, 1);
+
+INSERT INTO abarrotes VALUES (6, "Doritos", "Snack", 80, 3);
+
+INSERT INTO abarrotes VALUES (7, "Cheetos", "Snack", 100, 3);
+
+INSERT INTO abarrotes VALUES (8, "Chex Mix", "Snack", 107, 3);
+
+INSERT INTO abarrotes VALUES (9, "Cheddar Popcorn", "Snack", 94, 3);
+
+INSERT INTO abarrotes VALUES (10, "Plantain Chips", "Snack", 82, 3);
+
+INSERT INTO abarrotes VALUES (11, "Snickers", "Candy", 200, 4);
+
+INSERT INTO abarrotes VALUES (12, "Twix", "Candy", 220, 4);
+
+INSERT INTO abarrotes VALUES (13, "Sour Patch", "Candy", 176, 4);
+
+INSERT INTO abarrotes VALUES (14, "Nerds", "Candy", 350, 4);
+
+INSERT INTO abarrotes VALUES (15, "Skittles", "Candy", 347, 4);
+
+--Select to order itmes by price and onse statisticabout the items
+
+--Querying the table
+
+--Select all columns from abarrotes
+SELECT * FROM abarrotes;
+
+--Select name and quantity of each item
+SELECT name, quantity FROM abarrotes;
+
+--Select name, kind of item and aisle
+--descending aisle numbers
+SELECT name, kind, aisle FROM abarrotes ORDER BY aisle desc;
+
+--Filter results
+
+--Select all items from abarrotes that are
+--in aisle 1
+SELECT * FROM abarrotes WHERE aisle = 1;
+
+--Aggregating Data
+
+--Select aisle and sum quantity to add total items from each aisle to see quantity per aisle
+
+SELECT aisle, SUM (quantity) FROM abarrotes GROUP BY aisle;
+
+
+
+
+
+
