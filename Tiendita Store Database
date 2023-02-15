@@ -1,6 +1,6 @@
 --Create an online clothing store database
 
-CREATE TABLE tiendita (id INTEGER PRIMARY KEY, name TEXT,item INTEGER, size INTEGER, color INTEGER, price REAL);
+CREATE TABLE tiendita (id INTEGER PRIMARY KEY, name TEXT,item INTEGER, size TEXT, color TEXT, price REAL);
 
 INSERT INTO tiendita VALUES (1, "Tank", "apparel", "SML", "white", 18);
 INSERT INTO tiendita VALUES (2, "Flowy Blouse", "apparel", "SML", "pink", 25);
